@@ -228,6 +228,7 @@ sources = [
   'flatpak-run-sockets.c',
   'flatpak-run-wayland.c',
   'flatpak-run-x11.c',
+  'flatpak-run-pipewire.c',
   'flatpak-transaction.c',
   'flatpak-utils-http.c',
   'flatpak-utils.c',

@@ -67,6 +67,7 @@ const char *flatpak_context_sockets[] = {
   "cups",
   "gpg-agent",
   "inherit-wayland-socket",
+  "pipewire",
   NULL
 };
 

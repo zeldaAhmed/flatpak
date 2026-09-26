@@ -29,6 +29,7 @@
 #include "flatpak-run-wayland-private.h"
 #include "flatpak-run-x11-private.h"
 #include "flatpak-utils-private.h"
+#include "flatpak-run-pipewire-private.h"
 
 static void
 flatpak_run_add_gssproxy_args (FlatpakBwrap *bwrap)
@@ -214,6 +215,11 @@ flatpak_run_add_socket_args_environment (FlatpakBwrap         *bwrap,
   if (sockets & FLATPAK_CONTEXT_SOCKET_GPG_AGENT)
     {
       flatpak_run_add_gpg_agent_args (bwrap);
+    }
+
+  if (sockets & FLATPAK_CONTEXT_SOCKET_PIPEWIRE)
+    {
+      flatpak_run_add_pipewire_args (bwrap);
     }
 }
 

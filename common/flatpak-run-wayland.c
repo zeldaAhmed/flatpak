@@ -359,3 +359,4 @@ flatpak_run_add_wayland_args (FlatpakBwrap *bwrap,
 
   return res;
 }
+
